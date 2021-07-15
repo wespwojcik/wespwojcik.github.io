@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1270.989" height="376.112" viewBox="0 0 1270.989 376.112">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.421" cy="0.359" r="0.5" gradientTransform="translate(0.373 1.383) rotate(-180)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#332ceb"/>
+      <stop offset="0" stop-color="#1f99f7"/>
+      <stop offset="1" stop-color="#064f39"/>
+    </radialGradient>
+  </defs>
+  <g id="Triangle2" transform="translate(-326.606 -76.682)">
+    <path id="Path_1" data-name="Path 1" d="M1597.453,77.182H327.106V452.126Z" transform="translate(0 0)" stroke="#707070" stroke-width="1" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
