@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/Style.css">
     <script src="https://kit.fontawesome.com/d2e2bf9531.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,10 +24,14 @@
                 <span class="logo"><img class="hi" src="./Images/Picture_OfWes.jpeg"/></span>
                     <div class="Img-Cont">
                         <a class="fab fa-linkedin-in fa-3x" href="https://www.linkedin.com/in/wesley-wojcik-6268431b0"></a>
-                        <a  href="https://github.com/wespwojcik" ><i class="fab fa-github-square fa-3x"></i></a>
+                        <a href="https://github.com/wespwojcik" ><i class="fab fa-github-square fa-3x"></i></a>
+                        <b><a class="Contact" href="mailto:wespaulwoj@gmail.com?subject=Job Opportunity">Hire me!</a></b>
+                        </span>
                     </div>
+
             </div>
         </section>
+ 
     <div class="inner2">
         <div class="header2">
             <h1>My Skills</h1>
@@ -48,7 +56,7 @@
             <div class="skill-box">
                 <div class="skill-title">
                     <div class="img">
-                        <img src="./Images/javascript-736400.png" class="skill-icon">
+                        <img  src="./Images/javascript-736400.png" class="skill-icon">
                     </div>
                     <h3>JAVASCRIPT</h3>
                 </div>
@@ -85,35 +93,59 @@
             <h1>My Projects</h1>
         </div>
 		<section class="container2">
-            <div class="card">
-                <h3>Django Checkbook</h3>
+            <div class="proj-card">
+                <span class="Project-header">Django Checkbook</span>
                 
-                <div class="card-image">
+                <div class="card-im">
                     <video class="vid" width="400" height="200" controls>
                         <source src="Media/Checkbook.mp4" type="video/mp4">s
                     </video>
                 </div>
-                <p>Created a fully functional Checkbook app that uses CRUD intelligent functionality
-                    with fully designed and styled css templates.
+            <div class="Project-footer"><p>Created a functional Checkbook app that uses CRUD intelligent functionality
+                with fully designed and styled css templates.
                 </p>
             </div>
-            <div class="card">
-                <h3>National Park Search </h3>
+            </div>
+            <div class="proj-card">
+                <span class="Project-header">National Park LP</span>
                 <p></p>
-                <div class="card-image">
+                <div class="card-im">
                     <video class="vid" width="400" height="200" controls>
                         <source src="Media/National.mp4" type="video/mp4">s
                     </video>
                 </div>
+                <div class="Project-footer">
+                    <p>
+                        Developed an application to manage a user's ability to search a collection of National Parks using Django Framework. Relevant National Park information was populated for the user through API requests.
+                    </p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Theater CMS Live Project(Coming Soon!) </h3>
+            <div class="proj-card">
+                <span class="Project-header">Theater LP</span>
                 <p></p>
-                <div class="card-image">
+                <div class="card-im">
                     <img src="Media/CastMembers_CreatePage.jpg" width="400" height="200">
+                </div>
+                <div class="Project-footer"><p>
+                    Worked on a full-stack Theater website using c# mvc creating CRUD functionality and submitting stories with a scrum master.
+                    </p>
                 </div>
             </div>
         </section>
-    </div> 
+    </div>
+    <script>
+        gsap.to(".skill-icon",{
+            scrollTrigger: {
+                trigger: '.skill-icon',
+                start: 'top top'
+
+            },
+            x:500
+        })
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 </body>
 </html>
