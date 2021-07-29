@@ -126,6 +126,7 @@ time,
 mark,
 audio,
 video {
+  color: white;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1266,6 +1267,9 @@ body.index #main {
   width: 400px;
   margin-bottom: 15px;
   background-size: cover;
+}
+.card-im:hover {
+  opacity: 0.4;
 }
 .vid {
   display: block;
