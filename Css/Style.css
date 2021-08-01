@@ -1,3 +1,7 @@
+body {
+  background-size: 100%;
+}
+
 .hi {
   width: 200px;
   border-radius: 100%;
@@ -8,13 +12,7 @@ h2 {
 p {
   color: white;
 }
-.Img-Cont {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  width: 200px;
-  margin-left: 300px;
-}
+
 .fa-linkedin-in,
 .fa-github-square {
   color: white;
@@ -165,7 +163,6 @@ body {
 #banner::before {
   background-image: url("../Images/Triangle2.svg");
   background-size: 1000px 300px;
-
   display: inline-block;
   width: 1000px;
   height: 300px;
@@ -316,45 +313,58 @@ body {
   #banner .inner {
     width: 736px;
   }
-  /* .inner2::before {
-    background-size: 1300px 1000px;
+}
+.inner2::before {
+  background-image: url("../Images/Group 1.png");
+  background-size: 1582px 400px;
+  padding-top: 0%;
+  display: inline-block;
+  width: 1582px;
+  height: 400px;
+  content: "";
+}
+.inner2 {
+  background-color: #2e3141;
+}
+.Img-Cont {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 200px;
+  margin-left: 200px;
+  right: 50px;
+}
+@media screen and (max-width: 1072) {
+  .inner2::before {
+    background-image: url("../Images/Group 1.png");
+    background-size: 1072px 400px;
     padding-top: 0%;
     display: inline-block;
-    width: 1300px;
-    height: 1000px;
+    width: 1072px;
+    height: 400px;
     content: "";
-  } */
-}
-@media screen and (min-width: 375px) and (max-width: 700px) {
-  .inner2 {
-    display: block;
-    width: 375px;
-    font-size: 20px;
-    margin: 0;
-  }
-  .inner2::before {
-    background-size: 100px 100px;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 980px) {
+  .inner2 {
+    height: 600px;
+  }
   #banner .inner {
     display: block;
     width: 200px;
     font-size: 20px;
+    margin: auto;
   }
   .inner {
     display: block;
   }
-
   .inner2::before {
-    background-image: url("../Images/Group 1.png");
-    background-size: 335px 0px;
+    position: relative;
+    background-size: 20px 0px;
     padding-top: 0%;
     display: inline-block;
-    width: 335px;
+    width: 20px;
     height: 100px;
     content: "";
   }
@@ -369,18 +379,18 @@ body {
   }
 
   .Img-Cont {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     width: 100px;
-    height: 50px;
+    margin-left: 100px;
+    padding: 30px;
   }
-  .fa-linkedin-in,
-  .fa-github-square {
-    padding-right: 400px;
+
+  .fab {
+    margin: 5px;
   }
   h2 {
-    width: 200px;
-  }
-  p {
     width: 200px;
   }
 }
@@ -565,18 +575,6 @@ body.is-menu-visible #menu .inner {
 }
 
 /* Banner */
-.inner2::before {
-  background-image: url("../Images/Group 1.png");
-  background-size: 1582px 400px;
-  padding-top: 0%;
-  display: inline-block;
-  width: 1582px;
-  height: 400px;
-  content: "";
-}
-.inner2 {
-  background-color: #2e3141;
-}
 
 .header2 {
   text-align: center; /*centers "My Skills" title*/
@@ -669,6 +667,20 @@ body.is-menu-visible #menu .inner {
 }
 .skill-icon {
   width: 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 980px) {
+  .container {
+    background-color: #2e3141;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+  }
 }
 
 /* Wrapper */
@@ -1313,10 +1325,36 @@ h1 {
   padding-bottom: 50px;
   margin-top: 0%;
 }
-/* Boot strap Model */
 
-.Contact {
-  font-size: 18px;
-  color: white;
+@media screen and (min-width: 320px) and (max-width: 980px) {
+  .inner {
+    margin-top: 250px;
+  }
 }
-/* Boot strap Model */
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .proj-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+  }
+  .vid {
+    width: 360px;
+    margin: 0;
+  }
+  .Project-footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .Project-header {
+    height: 150px;
+  }
+  .card-im {
+    margin-top: 50px;
+  }
+}
